@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Majd Rezik</title>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .animate {
+            width: var(--width);
+            animation-name: animatedprogress;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes animatedprogress {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: var(--width);
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow"
+        style="position: fixed; width:100%; z-index:99999">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-size: 30px; color:black"> <strong>MAJD REZIK</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#"><span class="fa fa-home"></span> Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#skills"><span class="fa fa-coffee"></span> Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#about"><span class="fa fa-info-circle"></span> About</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="C:\Users\319060059\Desktop\website\Majd Rezik- Resume.pdf"
+                            target="_blank"><span class="fa fa-file-pdf-o"></span> CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#languages"><span class="fa fa-language"></span> Languages</a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ;">
+                                <span class="fa fa-fw fa-envelope"></span>
+                                Contact
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"
+                                style="background-color:lightgray;">
+                                <a class="dropdown-item" href="mailto:majdrezik@gmail.com?subject=Contact Me!"
+                                    target="_blank"><span class="fa fa-at"></span> Email</a>
+                                <a class="dropdown-item"
+                                    href="https://www.linkedin.com/in/majd-rezik-74455a176/?originalSubdomain=il"
+                                    target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a>
+                                <a class="dropdown-item" href="https://github.com/majdrezik" target="_blank"><span
+                                        class=" fa fa-github" target="_blank"></span> GitHub</a>
+                                <a class="dropdown-item" href="https://www.instagram.com/majdrezik/"
+                                    target="_blank"><span class=" fa fa-instagram" target="_blank"></span> Instagram
+                                </a>
+                                <a class="dropdown-item" href="https://www.facebook.com/majd.rezik.9"
+                                    target="_blank"><span class=" fa fa-facebook-f" target="_blank"></span> Facebook
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div name="body" class="container-fluid" ;">
+        <div class="container">
+            <div class="shadow-lg bg-white rounded">
+
+                <div style="margin-left: 0px;margin-right: 0px;position: relative;">
+                    <img src="C:\Users\319060059\Desktop\website\WhatsApp Image 2019-09-22 at 13.05.01.jpeg"
+                        alt="computers" class="w3-opacity-min" ; style="width: 100% ; height: 100vh; margin-top:71px ;">
+                </div>
+            </div>
+            <div class="shadow-lg bg-white rounded" style="margin-top: 30vh;">
+
+                <div class="card-body p-5">
+
+                    <div style="text-align: left; font-family:cursive; width: 70vw;">
+                        <p align="justify" style="font-size: 22px;"> <strong> <i>Hi! I'm Majd, welcome to my
+                                    website.</i></strong><br><br></p>
+                        <p align="justify" style="font-size: 20px;"> "The only place success comes before work is in the
+                            dictionary."<br> -Vince Lombardi</p>
+                        <p align="justify" style="font-size: 20px;"> I convert coffee into code </>
+                        </p>
+
+                        <p align="justify" style="font-size: 20px;"> CPU = Coffee Processing Unit</p>
+                        <div id="about">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div style="text-align:center; border-bottom: 0.2em black solid; width:auto;height: auto;"
+                                class="mx-auto">
+                                <h2 class="m-0"> About </h2>
+                            </div>
+                            <p align="justify" style="font-size: 20px; margin-top:1%; text-align: left;"> Right now, I'm
+                                a 3rd-year <a href="https://en.wikipedia.org/wiki/Software_engineer" target="_blank">
+                                    software engineering</a> student at <a href="https://w3.braude.ac.il/?lang=en"
+                                    target="_blank">ORT Braude College of Engineering.</a>
+                            </p>
+                            <p align="justify" style="font-size: 20px; margin-top: -1.5%;">I had the chance to get in a
+                                <a href="https://www.w3schools.com/whatis/whatis_fullstack.asp" target="_blank">
+                                    FullStack</a> course by <a href="https://www.tsofen.org/" target="_blank">Tsofen</a>
+                                in cooperation with
+                                <a href="https://www.amdocs.com/" target="_blank">Amdocs</a>,
+                                where we learned the very essentials of programming. the technologies we used
+                                are:
+                                <strong>
+                                    <div>
+                                        <ul style="position:sticky;">
+                                            <li><a href="https://www.w3schools.com/html/html5_intro.asp"
+                                                    target="_blank">
+                                                    HTML5
+                                                </a>
+                                            </li>
+                                            <li><a href="https://www.w3schools.com/css/" target="_blank">
+                                                    CSS3
+                                                </a>
+                                            </li>
+                                            <li><a href="https://getbootstrap.com/" target="_blank">
+                                                    Bootstrap
+                                                </a>
+                                            </li>
+                                            <li><a href="https://www.w3schools.com/js/" target="_blank">
+                                                    JavaScript (ES6+)
+                                                </a>
+                                            </li>
+                                            <li><a href="https://www.w3schools.com/react/" target="_blank">
+                                                    React
+                                                </a>
+                                            </li>
+                                            <li><a href="https://www.w3schools.com/java/" target="_blank">
+                                                    Java 8
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <a href="https://spring.io/projects/spring-framework"
+                                                        target="_blank">
+                                                        Spring
+                                                    </a>
+                                                    <a href="https://en.wikipedia.org/wiki/Representational_state_transfer"
+                                                        target="_blank">(REST API)</a>
+                                                </div>
+                                            </li>
+                                            <li><a href="https://www.mysql.com/" target="_blank">
+                                                    MySQL
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </strong>
+
+                            </p>
+                            <p align="justify " style="font-size: 20px; margin-top:1%; text-align: left;">
+                                Project for Amdocs: a Management system for assignments of employees based on their
+                                skills.<br>
+                                I specialized in the Back-End side of the Admin's system.
+                            </p>
+                        </div>
+
+                        <div id="skills">
+                        <br>
+                        <div>
+                            <div>
+                                <div style="text-align:center; border-bottom: 0.2em black solid; width:auto;height: auto; margin-top: 20%;"
+                                    class="mx-auto">
+                                    <h2 class="m-0"> Technical Skills </h2>
+                                </div>
+                                <br>
+                                <div style="margin-top: 1%;">
+                                    <div class="progress m-2 mt-2" style="height:2rem;margin-top: 1%;">
+                                        <div class="progress-bar bg-success animate" style="--width:95%; "
+                                            accesskey="first1" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                                            aria-valuemax="100">Java
+                                        </div>
+                                        <div>
+                                            <a style="margin-left: 12px;"> 95%</a>
+                                        </div>
+                                    </div>
+                                    <div class="progress m-2 row" style="height:2rem;">
+                                        <div class="progress-bar bg-info animate" style="--width:90%" role="progressbar"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">C
+                                        </div>
+                                        <div>
+                                            <a style="margin-left: 30px;"> 90%</a>
+                                        </div>
+                                    </div>
+                                    <div class="progress m-2" style="height:2rem;">
+                                        <div class="progress-bar bg-danger animate" role="progressbar"
+                                            style="--width: 85%" aria-valuenow="100" aria-valuemin="0"
+                                            aria-valuemax="100">Spring
+                                        </div>
+                                        <div>
+                                            <a style="margin-left: 50px;"> 85%</a>
+                                        </div>
+                                    </div>
+                                    <div class="progress m-2" style="height:2rem;">
+                                        <div class="progress-bar bg-danger animate" role="progressbar"
+                                            style="--width: 50%" aria-valuenow="100" aria-valuemin="0"
+                                            aria-valuemax="100">CSS
+                                        </div>
+                                        <div>
+                                            <a style="margin-left: 200px;"> 50%</a>
+                                        </div>
+                                    </div>
+                                    <div class="progress m-2" style="height:2rem;">
+                                        <div class="progress-bar bg-warning animate" role="progressbar"
+                                            style="--width: 60%" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100">HTML</div>
+                                        <div>
+                                            <a style="margin-left: 170px;"> 60%</a>
+                                        </div>
+                                    </div>
+                                    <div class="progress m-2" style="height:2rem;">
+                                        <div class="progress-bar bg-danger animate" role="progressbar"
+                                            style="--width: 20%" aria-valuenow="100" aria-valuemin="0"
+                                            aria-valuemax="100">React
+                                        </div>
+                                        <div>
+                                            <a style="margin-left: 280px;"> 20%</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        </div>
+                        <div id="languages">
+                            <div style="text-align:center; border-bottom: 0.2em black solid; width:auto;height: auto; margin-top: 20%;"
+                                class="mx-auto">
+                                <h2 class="m-0">Languages</h2>
+                            </div>
+                            <br>
+                            <div style="margin-top: 1%;">
+                                <div class="progress m-2 mt-2" style="height:2rem;margin-top: 1%;">
+                                    <div class="progress-bar bg-success animate" style="--width:95%; "
+                                        accesskey="first1" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                                        aria-valuemax="100">Arabic
+                                    </div>
+                                    <div>
+                                        <a style="margin-left: 12px;"> 98%</a>
+                                    </div>
+                                </div>
+                                <div class="progress m-2 row" style="height:2rem;">
+                                    <div class="progress-bar bg-info animate" style="--width:90%" role="progressbar"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">English
+                                    </div>
+                                    <div>
+                                        <a style="margin-left: 30px;"> 92%</a>
+                                    </div>
+                                </div>
+                                <div class="progress m-2" style="height:2rem;">
+                                    <div class="progress-bar bg-warning animate" role="progressbar" style="--width: 60%"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Hebrew</div>
+                                    <div>
+                                        <a style="margin-left: 170px;"> 90%</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+
+                        </div>
+
+                    </div>
+                </div>
+</body>
+
+</html>
